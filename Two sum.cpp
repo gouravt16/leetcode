@@ -6,14 +6,15 @@ public:
         unordered_map<int, int> arr;
         for(int i=0; i<nums.size(); ++i) {
             
-            arr[i] = nums[i];                
+            arr[nums[i]] = i;                
         }
         for(int i=0; i<nums.size(); ++i) {
             
-            if(arr.find(target - nums[i]) != arr.end()) {
+            if(arr.find(target - nums[i]) != arr.end() && arr[target - nums[i]]!=i) {
                 ans.push_back(i);
-                cout << arr.find(target - nums[i]);
-                ans.push_back(5);
+                ans.push_back(arr[target - nums[i]]);
+                // cout << arr.find(target - nums[i]);
+                // ans.push_back(5);
                 return ans;
             }
         }
