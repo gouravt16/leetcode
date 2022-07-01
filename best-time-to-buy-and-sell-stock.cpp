@@ -14,5 +14,20 @@ public:
         }
         return ans;
       // or we can do it in O(n^2) time also with brute force.
+
+    int maxProfit(vector<int>& prices) {
+        
+        int least=prices[0];
+        int ans=0, prices_size = prices.size();
+        for(int i=1; i<prices_size; ++i) {
+            int temp = prices[i] - least;
+            if(temp > ans) {
+                ans = temp;
+            }
+            if(prices[i] < least)
+                least=prices[i];
+        }
+        return ans;
+
     }
 };
