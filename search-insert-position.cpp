@@ -26,3 +26,11 @@ public:
         return 0;
     }
 };
+/*
+Some of the Binary Search based Interval Problems :)
+57. Insert Interval - https://leetcode.com/problems/insert-interval/
+436. Find Right Interval - https://leetcode.com/problems/find-right-interval/
+729. My Calendar I - https://leetcode.com/problems/my-calendar-i/
+1235. Maximum Profit in Job Scheduling - https://leetcode.com/problems/maximum-profit-in-job-scheduling/
+2054. Two Best Non-Overlapping Events - https://leetcode.com/problems/two-best-non-overlapping-events/
+*/
